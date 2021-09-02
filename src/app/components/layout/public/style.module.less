@@ -1,0 +1,47 @@
+.header {
+  height: 62px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.8rem;
+  .menu {
+    background-color: var(--primary);
+    .menuItem {
+      padding: 0 15px !important;
+    }
+  }
+
+  .logoGawee {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+  }
+
+  .btnLogin {
+    &:extend(.bg-yellow);
+    font-weight: 600;
+    border-radius: 20px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.content {
+  min-height: calc(100vh - 100px);
+  background-color: var(--gray);
+}
+
+.footer {
+  height: 38px;
+  text-align: center;
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* For Fixed Size - Box Sizing*/
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+  /* END - Box Sizing*/
+}

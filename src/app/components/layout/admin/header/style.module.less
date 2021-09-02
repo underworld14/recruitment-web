@@ -1,0 +1,41 @@
+.adminHeader {
+  height: 62px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  .headerMenu {
+    background-color: var(--primary);
+    .menuItem {
+      padding: 0 15px !important;
+    }
+  }
+
+  .logoGawee {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+  }
+
+  .searchInput {
+    width: 200px;
+    margin-right: 20px;
+    border-width: 0px;
+    border: none;
+    color: #f5f5f5;
+    background-color: rgba(0, 0, 0, 0);
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      outline: none;
+    }
+  }
+
+  .divider {
+    height: 35px;
+    background-color: #fff;
+  }
+}

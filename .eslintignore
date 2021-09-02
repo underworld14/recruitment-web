@@ -1,0 +1,8 @@
+src/registerServiceWorker.js
+src/**/__tests__/**
+src/serviceWorker.ts
+src/setupTests.ts
+node_modules
+dist
+server.js
+config-overrides.js

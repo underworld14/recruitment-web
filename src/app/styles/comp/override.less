@@ -1,0 +1,107 @@
+//For Ant Table Responsive
+.ant-table {
+  display: block;
+  @media screen and (max-width: 600px) {
+    &-thead {
+      display: none;
+    }
+    &-thead > tr,
+    &-tbody > tr {
+      th,
+      td {
+        &:first-of-type {
+          padding-top: 1rem;
+        }
+        &:last-of-type {
+          padding-bottom: 1rem;
+        }
+      }
+      > th,
+      > td {
+        display: block;
+        width: auto !important;
+        border: none;
+        padding: 0 1rem;
+        font-size: 1.1rem;
+        &:last-child {
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
+  }
+}
+//Add space for Prefix Form
+.ant-input-prefix {
+  margin-right: 8px !important;
+  position: relative;
+  // top: 2px;
+}
+.ant-tabs-left-bar {
+  text-align: right !important;
+}
+.ant-table-tbody > tr.ant-table-row-selected > td {
+  background: #eee !important;
+}
+
+//Fix ant switch (Non simentris)
+.ant-switch-checked .ant-switch-handle {
+  left: calc(100% - 15px - 4px - 2px) !important;
+}
+.ant-switch-small.ant-switch-checked .ant-switch-handle {
+  left: calc(100% - 8px - 4px - 2px) !important;
+}
+
+//For Upload Box
+.avatar-uploader > .ant-upload,
+.thum-size {
+  width: 128px;
+  height: 128px;
+  line-height: 128px;
+  & span {
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+//Divider AntD
+.ant-divider.ant-divider-horizontal {
+  margin: 5px 0px;
+}
+
+//REACT Orientation
+.react-orientation {
+  display: none;
+}
+@media all and (orientation: landscape) {
+  .react-orientation--landscape {
+    display: inherit;
+  }
+}
+@media all and (orientation: portrait) {
+  .react-orientation--portrait {
+    display: inherit;
+  }
+}
+
+//For Ant Tab
+.ant-tabs-tab {
+  margin: 0 25px 0 25px !important;
+}
+.ant-tabs-ink-bar {
+  height: 5px;
+  background: transparent;
+}
+
+.ant-tabs-ink-bar::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--primary);
+  width: calc(100% + 40px);
+  transform: translateX(-50%);
+}
